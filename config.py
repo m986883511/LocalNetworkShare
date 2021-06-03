@@ -14,14 +14,15 @@ help_string = """
 
 已知问题：
 1、web页面暂时不支持中文；
-2、运行exe窗口程序的电脑最好不要使用web页面，受限于python自带的wsgiref羸弱的性能，多个web链接可能会卡；
+2、运行exe窗口程序的电脑不要打开web页面，否则其他设备访问就会卡掉，如果卡了重开软件；
+（难道是受限于python自带的wsgiref羸弱的性能？）
 
 软件作者: Double.Wang
 作者链接: https://github.com/m986883511/LocalNetworkShare
 """.format(current_file_path)
 
 server = {
-    'port': '8080',
+    'port': '19999',
     'host': '0.0.0.0'
 }
 
